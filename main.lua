@@ -5,6 +5,8 @@ bg:setFillColor( 1, .49803921568, .31372549019 )--coral #FF7F50
 
 local logo = display.newImage( "videoIcon.png" )
 logo.x, logo.y = display.contentCenterX, 168*.5
+local title = display.newText( "Video Share", 0, 0, native.systemFontBold, 20 )
+title.x, title.y = logo.x, logo.y+(logo.height*.5)+10
 
 local myVideo= system.pathForFile( "sampleVideo.mp4")
 
